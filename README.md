@@ -1,9 +1,7 @@
 # MediSaarthi | AI-Powered Multilingual AYUSH Patient Intake & Clinical History System
 
-[![SIH 2026](https://img.shields.io/badge/Smart%20India%20Hackathon-2026-brightgreen?style=for-the-badge)](https://sih.gov.in)
-[![Problem Statement](https://img.shields.io/badge/Problem%20Statement-SIH26047-blue?style=for-the-badge)](https://sih.gov.in)
 [![Tech Stack](https://img.shields.io/badge/Stack-React%20%7C%20Node%20%7C%20TypeScript%20%7C%20MongoDB-emerald?style=for-the-badge)](https://nodejs.org)
-[![Triage Safety](https://img.shields.io/badge/Triage%20Safety-Deterministic%20Rules%20%2B%20AI-red?style=for-the-badge)](https://sih.gov.in)
+[![Triage Safety](https://img.shields.io/badge/Triage%20Safety-Deterministic%20Rules%20%2B%20AI-red?style=for-the-badge)](#triage-safety)
 
 > **Clinical Decision Support Notice:**  
 > MediSaarthi provides **clinical intake and triage assistance only**. It does **NOT** provide definitive medical diagnoses, prescribe treatments, or replace licensed healthcare practitioners. The medical doctor remains the ultimate decision-maker.
@@ -19,7 +17,7 @@ In fast-paced hospital outpatient departments (OPDs) and rural AYUSH healthcare 
 2. **Deterministic Red-Flag Triage:** Immediately halts routine questioning and triggers emergency notifications when critical cardiorespiratory patterns (e.g. chest pain + dyspnea) are reported.
 3. **Medical Document OCR Pipeline:** Automatically extracts vitals, medications, and laboratory values from prescriptions and test reports using Tesseract OCR.
 4. **Interactive Medical Timeline:** Chronologically structures past consultations, lab reports, and prescriptions.
-5. **Configurable AYUSH Case-Taking Mode:** Organizes holistic constitutional parameters (Prakriti, Agni, Koshtha, Bala) strictly adhering to SIH26047 specifications.
+5. **Configurable AYUSH Case-Taking Mode:** Organizes holistic constitutional parameters (Prakriti, Agni, Koshtha, Bala) according to standardized clinical specifications.
 6. **Physician Verification Workflow:** Doctors inspect AI summaries with one-click **Accept**, **Edit**, or **Reject** capabilities and a complete audit trail.
 
 ---
@@ -169,7 +167,7 @@ NODE_ENV=development
 MONGODB_URI=
 
 # JWT Authentication
-JWT_SECRET=medisaarthi_super_secure_jwt_secret_sih2026
+JWT_SECRET=medisaarthi_super_secure_jwt_secret_production
 
 # AI LLM Provider (Optional - Defaults to High-Fidelity Demo Mode if empty)
 AI_API_KEY=
@@ -227,9 +225,9 @@ npm run test --workspace=server
 
 ---
 
-## 🎯 Evaluator Walkthrough Guide (SIH Demo)
+## 🎯 Interactive Walkthrough Guide (Demo)
 
-MediSaarthi has a dedicated **SIH Evaluation Hub** accessible directly at `http://localhost:5173/demo`.
+MediSaarthi has a dedicated **Evaluation Hub** accessible directly at `http://localhost:5173/demo`.
 
 ### Scenario A — Normal Clinical Intake (Rahul Sharma, 42 M)
 1. Navigate to `http://localhost:5173/demo` and click **"Launch Scenario A (Normal)"**.
@@ -270,7 +268,7 @@ MediSaarthi has a dedicated **SIH Evaluation Hub** accessible directly at `http:
 
 ## 🌿 AYUSH Case-Taking Mode
 
-MediSaarthi implements a dedicated **AYUSH Clinical Intake Profile** adhering to SIH26047 specifications:
+MediSaarthi implements a dedicated **AYUSH Clinical Intake Profile** adhering to standardized clinical specifications:
 - **Prakriti & Dosha Lakshana:** Vata, Pitta, Kapha, and Dvandvaja constitutional tendencies.
 - **Agni Assessment:** Sama Agni, Vishama Agni, Tikshna Agni, Manda Agni.
 - **Koshtha Nature:** Mrudu, Madhyama, Krura bowel patterns.
@@ -303,5 +301,5 @@ MediSaarthi implements a dedicated **AYUSH Clinical Intake Profile** adhering to
 
 ## 👥 Team & Acknowledgments
 
-Developed with dedication for the **Smart India Hackathon (SIH 2026)** — Problem Statement **SIH26047**.
-Designed to accelerate clinical workflows and safeguard patient outcomes across India.
+Developed with dedication as an advanced AI-powered patient management and clinical intake system.
+Designed to accelerate clinical workflows and safeguard patient outcomes across healthcare centers.
